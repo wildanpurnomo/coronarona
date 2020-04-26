@@ -14,8 +14,10 @@
     "@line/bot-sdk": "^6.8.4",
     "axios": "^0.19.2",
     "dialogflow": "^1.2.0",
+    "ejs": "^3.1.2",
     "express": "^4.17.1",
     "mongoose": "^5.9.5",
+    "socket.io": "^2.3.0",
     "uuid": "^7.0.2"
   }
 }

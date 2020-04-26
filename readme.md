@@ -1,4 +1,6 @@
-line id : @zgm5425b
+web version: https://corona-linebot.herokuapp.com/web (Credits to Dian Rahmaji for the design - https://github.com/dianrahmaji)
+
+LINE Bot ID : @zgm5425b
 
 features :
 1. trivial infos
@@ -8,5 +10,3 @@ features :
 5. list donation related w/ COVID-19
 
 using dialogflow
-
-feel free to fork/contribute. I insist.

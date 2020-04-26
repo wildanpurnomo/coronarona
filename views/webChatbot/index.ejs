@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dicoding:email" content="wildanfajarpurnomo@gmail.com">
+    <title>Coronarona Web Chatbot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/webChatbot/styles.css">
+</head>
+
+<body>
+    <div id="title">
+        <h3>Coronarona Web Chatbot</h3>
+    </div>
+    <div id="chatbot">
+        <div id="chatWindow">
+        </div>
+        <div id="inputWindow">
+            <div class="row">
+                <div class="col-10">
+                    <input id="message" type="text" placeholder="Message" />
+                </div>
+                <div class="col">
+                    <button style="font-family: 'Roboto', sans-serif; text-decoration: bold" id="send" type="button" class="btn btn-outline-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made with <span class="heart">❤</span> for TKTI
+    </footer>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <%- include('./chat.ejs')%>
+</body>
+
+</html>

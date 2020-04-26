@@ -1,15 +1,10 @@
-const uuid = require('uuid');
 const SessionClient = require('./dialogflowClient');
 
-exports.processInput = async (input, contexts) => {
-    const sessionId = uuid.v4();
-    const sessionPath = SessionClient.sessionPath(process.env.DF_PROJECT_ID, sessionId);
+exports.processInput = async (input, userId) => {
+    const sessionPath = SessionClient.sessionPath(process.env.DF_PROJECT_ID, userId);
 
     const request = {
         session: sessionPath,
-        queryParams: {
-            contexts: contexts
-        },
         queryInput: {
             text: {
                 text: input,

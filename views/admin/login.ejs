@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dicoding:email" content="wildanfajarpurnomo@gmail.com">
+    <title>Login</title>
+    <%- include('./partials/bootstrap.ejs') %>
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div class="container" style="height: 100%;">
+        <div class="row">
+            <form class="col-12">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" class="form-control" id="loginUsername" aria-describedby="loginUsername"
+                        placeholder="Enter username" autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPass">Password</label>
+                    <input type="password" class="form-control" id="loginPass" placeholder="Password"
+                        autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('form').on('submit', (event) => {
+            event.preventDefault();
+            window.location.href = '/admin/main';
+        });
+    </script>
+</body>
+
+</html>

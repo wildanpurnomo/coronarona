@@ -3,4 +3,4 @@ const Config = {
     channelSecret: process.env.CHANNEL_SECRET
 };
 
-module.exports = Config
+module.exports = Config;

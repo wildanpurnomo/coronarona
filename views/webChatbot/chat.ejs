@@ -1,0 +1,29 @@
+<script>
+    $(document).ready(() => {
+        let socket = io(`https://corona-linebot.herokuapp.com`);
+
+        socket.on('reply', (data) => {
+            $('#chatWindow').append(`<div id="feedback"><p>${data.reply}</p></div>`);
+            $('#chatWindow').animate({ scrollTop: $('#chatWindow')[0].scrollHeight }, 1000);
+        });
+
+        $('#send').on('click', () => {
+            let msg = $('#message').val().trim().toLowerCase();
+            if (msg.length > 0) {
+                socket.emit('chat', {
+                    message: msg,
+                });
+                $('#chatWindow').append(`<div id="output"><p>${msg}</p></div>`);
+                $('#message').val('');
+                $('#chatWindow').animate({ scrollTop: $('#chatWindow')[0].scrollHeight }, 1000);
+            }
+        });
+
+        $('#message').keypress((evt) => {
+            let keyCode = evt.keyCode ? evt.keyCode : evt.which;
+            if (keyCode === 13) {
+                $('#send').click();
+            }
+        })
+    })
+</script>
