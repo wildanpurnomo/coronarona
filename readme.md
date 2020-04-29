@@ -1,4 +1,4 @@
-![Screenshot](https://web.whatsapp.com/73ab4e32-bde9-4c25-9693-c7f8748a862e)
+![Screenshot](blob:https://web.whatsapp.com/c9ece1bd-cdbf-4849-a611-a5d950ff0c34)
 
 
 web version: https://corona-linebot.herokuapp.com/web (Credits to Dian Rahmaji for the design - https://github.com/dianrahmaji)
