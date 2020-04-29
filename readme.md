@@ -1,3 +1,6 @@
+![Screenshot](blob:https://web.whatsapp.com/73ab4e32-bde9-4c25-9693-c7f8748a862e)
+
+
 web version: https://corona-linebot.herokuapp.com/web (Credits to Dian Rahmaji for the design - https://github.com/dianrahmaji)
 
 LINE Bot ID : @zgm5425b
