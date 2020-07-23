@@ -1,7 +1,9 @@
 ![Screenshot](https://github.com/wildanpurnomo/coronarona/blob/master/public/assets/img/ss.PNG)
 
 
-web version: https://corona-linebot.herokuapp.com/web (Credits to Dian Rahmaji for the design - https://github.com/dianrahmaji)
+web version: https://corona-linebot.herokuapp.com/web (service is stopped because I need more space in my Google Cloud Platform so I turned off this bot service)
+
+Credits to Dian Rahmaji for the design - https://github.com/dianrahmaji
 
 LINE Bot ID : @zgm5425b
 
